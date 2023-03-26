@@ -1,0 +1,247 @@
+header {
+    background-color: var(--dark-purple);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-weight: 600;
+}
+
+.header {
+    background-color: var(--dark-purple);
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    margin-top: 5rem;
+    padding-left: 5rem;
+    color: #2A2550;
+    text-decoration: overline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: rgb(255, 175, 3);
+    font-size: 70px;
+}
+
+.logo img {
+    height: 100px;
+    padding-left: 3rem;
+}
+
+.header {
+    display: flex;
+}
+
+.header a {
+    color: rgb(214, 214, 214);
+    transition: all 500ms;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.header a:hover {
+    color: white;
+    letter-spacing: 2px;
+}
+
+:root {
+    --dark: #251D3A;
+    --dark-purple: #2A2550;
+    --dark-orange: #E04D01;
+    --light-orange: #FF7700;
+}
+
+.products  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card-info a {
+    text-decoration: none;
+}
+
+.product-card-info a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+/* faq */
+.accordion-item {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .accordion-head {
+    margin-top: 10px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .accordion-head ion-icon {
+    color: var(--txt);
+    font-size: 24px;
+    transition: transform 500ms;
+  }
+  
+  .accordion-body {
+    height: 0;
+    overflow: hidden;
+    background-color: #f0eff6;
+    border-radius: 0 0 30px 30px;
+
+  
+    transition: all 500ms;
+  }
+  
+  .show-accordion-body {
+    height: 125px;
+    padding: 10px;
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+  }
+
+  /* Buy Product Modal */
+
+.modal {
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(60, 56, 73, 0.85);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    color: white;
+
+    display: grid;
+    place-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.slideshow-container {
+    height: 500px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+  
+    animation: fade 1s;
+
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 250px;
+  }
+
+  /* doesnt show text after fixing position line 178  */
+
+  .slide-mug {
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    font-size: 48px;
+    text-align: center;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+    background-color: rgba(101, 98, 86, 0.5);
+  }
+
+  .dots-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+  
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .dot {
+    width: 25px;
+    height: 25px;
+    background-color: var(--light-txt);
+    border-radius: 50%;
+  
+    transition: all 500ms;
+  }
+  
+  .dot-active {
+    background-color: #ffc37f;
+  }
+
+  .hideModal {
+    display: none;
+  }
+
+.icons ion-icon {
+    font-size: 24px;
+    color: white;
+    background-color: var(--dark-purple);
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: var(--dark-purple);
+
+}
+
+.icons ion-icon:hover {
+    rotate: 90deg;
+    transition: all 500ms;
+}
+
+
